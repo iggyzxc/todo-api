@@ -8,7 +8,11 @@ public interface TodoService {
 
     TodoDto newTodo(TodoDto todoDto);
 
-    TodoDto getTodo(long id);
+    TodoDto getTodo(Long id);
 
     List<TodoDto> getAllTodos();
+
+    TodoDto updateTodo(Long id, TodoDto todoDto);
+
+    void deleteTodo(Long id);
 }
